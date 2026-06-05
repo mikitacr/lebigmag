@@ -2,14 +2,14 @@
    1. RESET & BASE STYLES (Базовые настройки)
    ========================================================================== */
 *, *::before, *::after {
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Courier New', Courier, monospace !important;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     background-color: #ffffff;
     color: #000000;
     overflow-x: hidden;
@@ -17,6 +17,10 @@ body {
     max-width: 1050px;
     margin: 0 auto;
     padding: 0 40px; 
+}
+
+input, select, textarea, button {
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 body.hide-sidebar .catalog-layout {
