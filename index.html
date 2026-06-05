@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lebigmag</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="brand-name" id="logoLink">l e b i g m a g</a>
+        </div>
+        
+        <nav class="header-menu desktop-menu-nav">
+            <button class="menu-item" data-target="about">о проекте</button>
+            <button class="menu-item" data-target="delivery">доставка</button>
+            <button class="menu-item" data-target="payment">оплата</button>
+            <button class="menu-item" data-target="search">поиск</button>
+            <button class="menu-item link-item" id="cartHeaderLink" data-target="cartPage">корзина <span id="cartUniqueCount">(0)</span></button>
+        </nav>
+    </header>
+
+    <div class="mega-overlay" id="megaOverlay">
+        <button class="mobile-close-menu-btn" id="mobileCloseMenuBtn" aria-label="Закрыть меню">&times;</button>
+        <div class="menu-pointer" id="menuPointer"></div>
+        <div class="overlay-scroll-container">
+            <div class="overlay-content" id="overlayContent"></div>
+        </div>
+    </div>
+
+    <main class="main-container" id="mainContent">
+        
+        <div class="catalog-layout" id="catalogLayout">
+            
+            <aside class="sidebar" id="sidebarMenu">
+                <ul class="sidebar-list">
+                    <li><button class="sidebar-link active" data-category="all">all titles</button></li>
+                    <li><button class="sidebar-link" data-category="arts-culture">arts / culture</button></li>
+                    <li><button class="sidebar-link" data-category="design-architecture">design / architecture</button></li>
+                    <li><button class="sidebar-link" data-category="fashion-lifestyle">fashion / lifestyle</button></li>
+                    <li><button class="sidebar-link" data-category="reselected">reselected</button></li>
+                    <li><button class="sidebar-link" data-category="sale">sale</button></li>
+                    <li><button class="sidebar-link" data-category="newsletter">newsletter</button></li>
+                </ul>
+            </aside>
+
+            <div class="mobile-category-select-wrapper">
+                <select id="mobileCategorySelect" class="mobile-category-select">
+                    <option value="all">all titles</option>
+                    <option value="arts-culture">arts / culture</option>
+                    <option value="design-architecture">design / architecture</option>
+                    <option value="fashion-lifestyle">fashion / lifestyle</option>
+                    <option value="reselected">reselected</option>
+                    <option value="sale">sale</option>
+                    <option value="newsletter">newsletter</option>
+                </select>
+            </div>
+
+            <section id="catalogSection" class="page-section active">
+                <h1 class="section-title" id="catalogTitle">все журналы</h1>
+                <div class="products-grid" id="catalogGrid"></div>
+            </section>
+            
+        </div>
+
+        <section id="productDetailSection" class="page-section">
+            <div class="back-navigation-row">
+                <button class="back-btn" id="backToCatalog">← назад в каталог</button>
+            </div>
+            
+            <div class="product-detail-layout" id="productDetailContainer"></div>
+
+            <section class="related-products">
+                <h2 class="related-title">другие номера этого журнала</h2>
+                <div class="products-grid" id="relatedGrid"></div>
+            </section>
+        </section>
+
+        <section id="cartSection" class="page-section">
+            <div class="back-navigation-row">
+                <button class="back-btn" id="backToCatalogFromCart">← вернуться на главную</button>
+            </div>
+            <h1 class="section-title">корзина</h1>
+            
+            <div class="cart-items-list" id="cartItemsList"></div>
+
+            <div class="cart-summary-block" id="cartSummaryBlock">
+                <div class="cart-total-text" id="cartTotalText"></div>
+                <button class="checkout-btn" id="checkoutBtn">оформить заказ</button>
+            </div>
+            
+            <div id="emptyCartMessage" style="display:none; font-size:1.2rem; color:#555555; margin-top:20px;">
+                ваша корзина пуста. <button id="goToCatalogFromCart" style="text-decoration:underline; color:#000;">Перейти в каталог</button>
+            </div>
+        </section>
+
+        <section id="checkoutSection" class="page-section">
+            <div class="back-navigation-row">
+                <button class="back-btn" id="backToCartFromCheckout">← вернуться в корзину</button>
+            </div>
+            <h1 class="section-title">оформление заказа</h1>
+            
+            <div class="checkout-container">
+                <div class="checkout-table" id="checkoutTable"></div>
+
+                <div class="checkout-calc-block">
+                    <div class="promocode-row">
+                        <input type="text" placeholder="промокод" class="checkout-input promo-input">
+                        <button class="apply-promo-btn">применить</button>
+                    </div>
+                    
+                    <div class="calc-details">
+                        <p>общий вес: <span id="checkoutTotalWeight">0</span> гр.</p>
+                        <p>стоимость: <span id="checkoutSubtotal">0</span> ₽</p>
+                        <p class="calc-total">итого: <span id="checkoutFinalTotal">0</span> ₽</p>
+                    </div>
+                </div>
+
+                <form id="checkoutForm" onsubmit="return false;">
+                    <h3 class="checkout-form-title">доставка</h3>
+                    <div class="checkout-options-group">
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="deliveryOption" value="Самовывоз" data-cost="0" checked>
+                            <span class="custom-checkbox"></span>
+                            <div class="delivery-details-wrap">
+                                <span class="delivery-name">Самовывоз</span>
+                                <span class="delivery-sub">Москва, Пятницкая улица, 42, «Рихтер» (бесплатно)</span>
+                            </div>
+                        </label>
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="deliveryOption" value="Почтовое отправление" data-cost="700">
+                            <span class="custom-checkbox"></span>
+                            <div class="delivery-details-wrap">
+                                <span class="delivery-name">Почтовое отправление в России</span>
+                                <span class="delivery-sub">Стоимость 700 руб. | Срок доставки от 7 до 14 дней</span>
+                            </div>
+                        </label>
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="deliveryOption" value="Курьер Россия" data-cost="500">
+                            <span class="custom-checkbox"></span>
+                            <div class="delivery-details-wrap">
+                                <span class="delivery-name">Курьерская доставка в России</span>
+                                <span class="delivery-sub">Стоимость 500 руб. | Срок доставки от 2 до 7 дней</span>
+                            </div>
+                        </label>
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="deliveryOption" value="Курьер Москва день в день" data-cost="900">
+                            <span class="custom-checkbox"></span>
+                            <div class="delivery-details-wrap">
+                                <span class="delivery-name">Курьерская доставка в Москве в день заказа</span>
+                                <span class="delivery-sub">Стоимость 900 руб.</span>
+                            </div>
+                        </label>
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="deliveryOption" value="Курьер Беларусь" data-cost="600">
+                            <span class="custom-checkbox"></span>
+                            <div class="delivery-details-wrap">
+                                <span class="delivery-name">Курьерская доставка в Беларусь</span>
+                                <span class="delivery-sub">Стоимость 600 руб. | Срок доставки от 5 до 10 дней</span>
+                            </div>
+                        </label>
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="deliveryOption" value="Курьер Казахстан" data-cost="900">
+                            <span class="custom-checkbox"></span>
+                            <div class="delivery-details-wrap">
+                                <span class="delivery-name">Курьерская доставка в Казахстан</span>
+                                <span class="delivery-sub">Стоимость 900 руб. | Срок доставки от 10 до 20 дней</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <h3 class="checkout-form-title">информация для оплаты и доставки заказа</h3>
+                    <div class="checkout-fields-grid">
+                        <input type="text" id="clientName" placeholder="имя и фамилия *" class="checkout-input" required>
+                        <div class="email-input-wrapper">
+                            <input type="email" id="clientEmail" placeholder="электронная почта *" class="checkout-input" required>
+                            <span class="email-error-msg" id="emailError">некорректный адрес почты</span>
+                        </div>
+                        <input type="text" id="clientAddress" placeholder="адрес проживания *" class="checkout-input" required>
+                        <input type="text" id="clientZip" placeholder="почтовый индекс *" class="checkout-input" required>
+                        <textarea id="clientComment" placeholder="ваши комментарии к заказу" class="checkout-textarea"></textarea>
+                    </div>
+
+                    <h3 class="checkout-form-title">способы оплаты</h3>
+                    <div class="checkout-options-group">
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="paymentOption" value="Card" checked>
+                            <span class="custom-checkbox"></span>
+                            банковская карта (Visa, MasterCard, МИР) через PayAnyWay
+                        </label>
+                        <label class="option-checkbox-label">
+                            <input type="radio" name="paymentOption" value="Cash">
+                            <span class="custom-checkbox"></span>
+                            наличными или картой курьеру при получении
+                        </label>
+                    </div>
+
+                    <div class="checkout-submit-wrapper">
+                        <button type="submit" class="checkout-submit-btn" id="finalSubmitOrderBtn">оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-arrow prev" id="lightboxPrev" aria-label="Предыдущее фото">←</button>
+        <div class="lightbox-content">
+            <img src="" alt="Увеличенное фото" id="lightboxImg" class="lightbox-img">
+        </div>
+        <button class="lightbox-arrow next" id="lightboxNext" aria-label="Следующее фото">→</button>
+        <button class="lightbox-close" id="lightboxClose">закрыть</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2026 lebigmag. все права защищены.</p>
+            
+            <nav class="mobile-footer-menu" id="mobileFooterMenu">
+                <button class="menu-item" data-target="about">о проекте</button>
+                <button class="menu-item" data-target="delivery">доставка</button>
+                <button class="menu-item" data-target="payment">оплата</button>
+                <button class="menu-item" data-target="search">поиск</button>
+                <button class="menu-item link-item" id="mobileCartHeaderLink" data-target="cartPage">корзина <span id="cartUniqueCountMobile">(0)</span></button>
+            </nav>
+
+            <div class="footer-links">
+                <a href="https://t.me/lebigmag">Telegram</a>
+                <a href="http://www.instagram.com/lebigmag/">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Наверх">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
