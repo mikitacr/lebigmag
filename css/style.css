@@ -1308,7 +1308,6 @@ body.overlay-active .main-container {
 
     .mobile-footer-menu .menu-item {
         font-size: 0.75rem !important; 
-        font-weight: bold !important;
         padding: 5px 2px !important;
         text-decoration: none !important;
     }
