@@ -1326,3 +1326,15 @@ body.overlay-active .main-container {
 .checkout-btn {
     text-decoration: none !important;
 }
+
+.old-price {
+    text-decoration: line-through !important;
+    color: #999999 !important;
+    margin-right: 8px !important;
+    font-size: 0.85rem !important;
+}
+
+.new-price {
+    font-weight: bold !important;
+    color: #000000 !important;
+}
