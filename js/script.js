@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- БАЗА ДАННЫХ ЖУРНАЛОВ ---
     const productsData = [
         {
             id: '032c48',
@@ -161,6 +160,147 @@ document.addEventListener('DOMContentLoaded', () => {
             descMore: 'Журнал выходит с 2001 года, уделяет основное внимание моде, изредка отвлекается на искусство, политику и литературу. На обложках издания побывали Николь Кидман, Джоди Фостер, Натали Портман, Тильда Суинтон и другие звезды, снятые эксклюзивно лучшими в мире фотографами.      ',
             descSpecs: 'Великобритания / англ. / 23х30 см / 552 стр. / 2360 гр.',
             descNotice: 'К сожалению, мы не можем гарантировать наличие определенной обложки, но постараемся учесть ваши пожелания, если вы напишите о них в комментарии к заказу.'
+        },
+        {
+            id: 'Architectural Review1528',
+            category: 'design-architecture',
+            group: 'Architectural Review',
+            title: 'Architectural Review',
+            issue: '№ 1528',
+            isSoldOut: false,
+            price: 2900,
+            weightGram: 400,
+            folder: 'images/mags/mag11',
+            images: ['cover.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'],
+            descMain: 'Старейший архитектурный журнал, выходящий в Лондоне с 1896 года.',
+            descMore: 'Авторитет и высокую профессиональную оценку издание снискало благодаря умению находить и раскрывать самые актуальные сюжеты. Так еще в начале 1930-х годов статьи Мортона Шанда стали одними из первых публикаций, всерьез исследующих модернизм. А в послевоенный период журнал чаще других поднимал вопросы урбанистики — автором статей стал архитектор Гордон Каллен, впоследствии издавший серию серию блистательных книг на эту тему.',
+            descSpecs: 'Великобритания / англ. / 23х28 см / 110 стр. / 400 гр.',
+            descNotice: ''
+        },
+        {
+            id: 'Architectural Review1529',
+            category: 'design-architecture',
+            group: 'Architectural Review',
+            title: 'Architectural Review',
+            issue: '№ 1529',
+            isSoldOut: true,
+            price: 2900,
+            weightGram: 350,
+            folder: 'images/mags/mag12',
+            images: ['cover.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'],
+            descMain: 'Старейший архитектурный журнал, выходящий в Лондоне с 1896 года.',
+            descMore: 'Авторитет и высокую профессиональную оценку издание снискало благодаря умению находить и раскрывать самые актуальные сюжеты. Так еще в начале 1930-х годов статьи Мортона Шанда стали одними из первых публикаций, всерьез исследующих модернизм. А в послевоенный период журнал чаще других поднимал вопросы урбанистики — автором статей стал архитектор Гордон Каллен, впоследствии издавший серию серию блистательных книг на эту тему.',
+            descSpecs: 'Великобритания / англ. / 23х28 см / 110 стр. / 400 гр.',
+            descNotice: ''
+        },
+        {
+            id: 'Anima3',
+            category: 'design-architecture',
+            group: 'Anima',
+            title: 'Anima',
+            issue: '№ 3',
+            isSoldOut: true,
+            price: 2700,
+            weightGram: 1290,
+            folder: 'images/mags/mag13',
+            images: ['cover.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'],
+            descMain: 'Anima — журнал о дизайне, который интересуется не только тем, как выглядят сами предметы, но и тем, что они означают.',
+            descMore: 'Anima влюбляет в себя и профессионалов индустрии, и начинающих дизайнеров, и любого, кто знает, что дизайн никогда не стоит на месте. Изящно оформленное, остроумное издание, способное вывести любой предмет за рамки его области и предложить ясный и уникальный взгляд на современность.',
+            descSpecs: 'Великобритания / англ. / 30х23 см / 272 стр. / 1290 гр.',
+            descNotice: 'К сожалению, мы не можем гарантировать наличие определенной обложки, но постараемся учесть ваши пожелания, если вы напишите о них в комментарии к заказу.'
+        },
+        {
+            id: 'A Magazine1',
+            category: 'reselected',
+            group: 'A Magaziners',
+            title: 'A Magazine',
+            issue: '№ 1, Maison Martin Margiela, Reprint 2021',
+            isSoldOut: false,
+            price: 11000,
+            folder: 'images/mags/mag14',
+            images: ['cover.jpg'],
+            descMain: 'Бельгийское издание, каждый выпуск которого курирует определенный дизайнер или модный дом.',
+            descMore: 'Это не приглашенный редактор, а фактически создатель номера, который наполняет журнал своими контентом и эстетикой. За время существования издания его кураторами становились Мартин Маржела, Йоши Ямомото, Хайдер Аккерман, Юн Такахаши, Мартин Ситбон и другие.',
+            descSpecs: 'Состояние — 7/10',
+            descNotice: ''
+        },
+        {
+            id: 'A Magazine4',
+            category: 'reselected',
+            group: 'A Magaziners',
+            title: 'A Magazine',
+            issue: '№ 4, Jun Takahashi, 2006',
+            isSoldOut: true,
+            price: 3000,
+            folder: 'images/mags/mag15',
+            images: ['cover.jpg'],
+            descMain: 'Французское издание, каждый выпуск которого курирует определенный дизайнер или модный дом.',
+            descMore: 'Это не приглашенный редактор, а фактически создатель номера, который наполняет журнал своими контентом и эстетикой. За время существования издания его кураторами становились Мартин Маржела, Йоши Ямомото, Хайдер Аккерман, Юн Такахаши, Мартин Ситбон и другие.',
+            descSpecs: 'Состояние — 5/10 (следы влаги)',
+            descNotice: ''
+        },
+        {
+            id: 'A Magazine16',
+            category: 'reselected',
+            group: 'A Magaziners',
+            title: 'A Magazine',
+            issue: '№ 16, Alessandro Michele',
+            isSoldOut: true,
+            price: 7000,
+            folder: 'images/mags/mag16',
+            images: ['cover.jpg'],
+            descMain: 'Французское издание, каждый выпуск которого курирует определенный дизайнер или модный дом.',
+            descMore: 'Это не приглашенный редактор, а фактически создатель номера, который наполняет журнал своими контентом и эстетикой. За время существования издания его кураторами становились Мартин Маржела, Йоши Ямомото, Хайдер Аккерман, Юн Такахаши, Мартин Ситбон и другие.',
+            descSpecs: 'Состояние — 9/10',
+            descNotice: ''
+        },
+        {
+            id: 'Love24',
+            category: 'sale',
+            group: 'Love',
+            title: 'Love',
+            issue: '№ 24, Autumn/Winter 2025',
+            isSoldOut: false,
+            price: 3360,
+            weightGram: 1300,
+            folder: 'images/mags/mag17',
+            images: ['cover.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'],
+            descMain: 'Жирный альтернативный глянец, с 2009 года выходящий в Лондоне под предводительством Кэти Гранд.',
+            descMore: 'Закончив дела с прекрасным Pop, Гранд сделала отличный продукт, одновременно романтичный и брутальный, всегда наполненный звездами поп-культуры и лучшими моделями в съемках самых дорогих фотографов. ',
+            descSpecs: 'Великобритания / англ. / 23х30 см / 302 стр. / 1300 гр.',
+            descNotice: 'К сожалению, мы не можем гарантировать наличие определенной обложки, но постараемся учесть ваши пожелания, если вы напишите о них в комментарии к заказу.'
+        },
+        {
+            id: 'Love25',
+            category: 'fashion-lifestyle',
+            group: 'Love',
+            title: 'Love',
+            issue: '№ 25, Spring/Summer 2026',
+            isSoldOut: false,
+            price: 4200,
+            weightGram: 1260,
+            folder: 'images/mags/mag17',
+            images: ['cover.jpg', '1.jpg'],
+            descMain: 'Жирный альтернативный глянец, с 2009 года выходящий в Лондоне под предводительством Кэти Гранд.',
+            descMore: 'Закончив дела с прекрасным Pop, Гранд сделала отличный продукт, одновременно романтичный и брутальный, всегда наполненный звездами поп-культуры и лучшими моделями в съемках самых дорогих фотографов. ',
+            descSpecs: 'Великобритания / англ. / 23х30 см / 290 стр. / 1260 гр.',
+            descNotice: 'К сожалению, мы не можем гарантировать наличие определенной обложки, но постараемся учесть ваши пожелания, если вы напишите о них в комментарии к заказу.'
+        },
+        {
+            id: 'Numéro Homme France50',
+            category: 'sale',
+            group: 'Numéro Homme France',
+            title: 'Numéro Homme France',
+            issue: '№ 50, Autumn/Winter 2025/26',
+            isSoldOut: false,
+            price: 1760,
+            weightGram: 860,
+            folder: 'images/mags/mag19',
+            images: ['cover.jpg'],
+            descMain: 'Знаменитый парижский журнал, в меру глянцевый и авангардный, точно чувствует актуальный стиль и не перебарщивает с экспериментами.',
+            descMore: 'Мужская версия.',
+            descSpecs: 'Франция / фр. / 23х30 см / 210 стр. / 860 гр.',
+            descNotice: ''
         }
     ];
 
@@ -303,7 +443,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `
     };
 
-    // --- ИНИЦИАЛИЗАЦИЯ КОРЗИНЫ (LOCALSTORAGE) ---
     let cart = JSON.parse(localStorage.getItem('journal_cart')) || [];
 
     function saveCart() {
@@ -319,7 +458,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (countFooter) countFooter.textContent = `(${uniqueCount})`;
     }
 
-    // --- ВЕРХНЕЕ И НИЖНЕЕ МЕНЮ (ШТОРКИ) ---
     const allMenuItems = document.querySelectorAll('.header-menu .menu-item, .mobile-footer-menu .menu-item');
     const megaOverlay = document.getElementById('megaOverlay');
     const overlayContent = document.getElementById('overlayContent');
@@ -372,7 +510,6 @@ document.addEventListener('DOMContentLoaded', () => {
         activeSection = null;
     }
 
-    // Живой поиск
     function initSearchLogic() {
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
@@ -420,7 +557,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- РЕНДЕРИНГ КАТАЛОГА ---
     const catalogGrid = document.getElementById('catalogGrid');
 
     function renderCatalog(filterCategory = 'all') {
@@ -456,7 +592,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- СТРАНИЦА ТОВАРА (ДЕТАЛЬНАЯ) ---
     const productDetailContainer = document.getElementById('productDetailContainer');
     const relatedGrid = document.getElementById('relatedGrid');
     let currentGalleryImages = [];
@@ -642,7 +777,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- БЕСКОНЕЧНЫЙ СЛАЙДЕР С ЛАЙТБОКСОМ ---
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxPrev = document.getElementById('lightboxPrev');
@@ -682,7 +816,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- ПЕРЕКЛЮЧЕНИЕ СЕКЦИЙ С СОХРАНЕНИЕМ URL (SPA) ---
     function showSection(sectionId) {
         closeMegaOverlay();
         
@@ -725,7 +858,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo(0, 0);
     }
 
-    // Слушатели переходов универсальных кнопок назад
     const backToCatalogBtn = document.getElementById('backToCatalog');
     if(backToCatalogBtn) {
         backToCatalogBtn.addEventListener('click', () => {
@@ -763,7 +895,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Переключение категорий (Десктоп)
     const sidebarLinks = document.querySelectorAll('.sidebar-link');
     const catalogTitle = document.getElementById('catalogTitle');
     const mobileCategorySelect = document.getElementById('mobileCategorySelect');
@@ -782,7 +913,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Переключение категорий (Мобильный селект)
     if (mobileCategorySelect) {
         mobileCategorySelect.addEventListener('change', (e) => {
             const category = e.target.value;
@@ -923,7 +1053,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- ЛОГИКА СТРАНИЦЫ ОФОРМЛЕНИЯ ЗАКАЗА С ДИНАМИЧЕСКИМ РАСЧЕТОМ ---
     function initCheckoutPage() {
         const checkoutTable = document.getElementById('checkoutTable');
         const checkoutTotalWeight = document.getElementById('checkoutTotalWeight');
@@ -1008,7 +1137,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- ЛОГИКА КНОПКИ "НАВЕРХ" ---
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
     if (scrollToTopBtn) {
@@ -1028,7 +1156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Первоначальный запуск контента
     renderCatalog();
     updateCartHeaderCount();
     checkUrlHashOnLoad();
