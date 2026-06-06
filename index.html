@@ -8,11 +8,18 @@
 </head>
 <body>
 
-    <!-- ВЕРХНИЙ НАВИГАЦИОННЫЙ БАР -->
     <header class="header">
         <div class="header-left">
             <a href="#" class="brand-name" id="logoLink">l e b i g m a g</a>
         </div>
+        
+        <nav class="mobile-footer-menu" id="mobileFooterMenu">
+            <button class="menu-item" data-target="about">о проекте</button>
+            <button class="menu-item" data-target="delivery">доставка</button>
+            <button class="menu-item" data-target="payment">оплата</button>
+            <button class="menu-item" data-target="search">поиск</button>
+            <button class="menu-item link-item" id="mobileCartHeaderLink" data-target="cartPage">корзина <span id="cartUniqueCountMobile">(0)</span></button>
+        </nav>
         
         <nav class="header-menu desktop-menu-nav">
             <button class="menu-item" data-target="about">о проекте</button>
@@ -23,7 +30,6 @@
         </nav>
     </header>
 
-    <!-- ВСПЛЫВАЮЩИЙ ОВЕРЛЕЙ ДЛЯ РАЗДЕЛОВ МЕНЮ -->
     <div class="mega-overlay" id="megaOverlay">
         <button class="mobile-close-menu-btn" id="mobileCloseMenuBtn" aria-label="Закрыть меню">&times;</button>
         <div class="menu-pointer" id="menuPointer"></div>
@@ -32,12 +38,10 @@
         </div>
     </div>
 
-    <!-- ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ -->
     <main class="main-container" id="mainContent">
         
         <div class="catalog-layout" id="catalogLayout">
             
-            <!-- БОКОВОЕ МЕНЮ -->
             <aside class="sidebar" id="sidebarMenu">
                 <ul class="sidebar-list">
                     <li><button class="sidebar-link active" data-category="all">all titles</button></li>
@@ -50,7 +54,6 @@
                 </ul>
             </aside>
 
-            <!-- ВЫПАДАЮЩИЙ СПИСОК КАТЕГОРИЙ (Только мобильные) -->
             <div class="mobile-category-select-wrapper">
                 <select id="mobileCategorySelect" class="mobile-category-select">
                     <option value="all">all titles</option>
@@ -70,7 +73,6 @@
             
         </div>
 
-        <!-- КАРТОЧКА ТОВАРА -->
         <section id="productDetailSection" class="page-section">
             <div class="back-navigation-row">
                 <button class="back-btn" id="backToCatalog">← назад в каталог</button>
@@ -84,7 +86,6 @@
             </section>
         </section>
 
-        <!-- КОРЗИНА -->
         <section id="cartSection" class="page-section">
             <div class="back-navigation-row">
                 <button class="back-btn" id="backToCatalogFromCart">← вернуться на главную</button>
@@ -103,7 +104,6 @@
             </div>
         </section>
 
-        <!-- СТРАНИЦА ОФОРМЛЕНИЯ ЗАКАЗА -->
         <section id="checkoutSection" class="page-section">
             <div class="back-navigation-row">
                 <button class="back-btn" id="backToCartFromCheckout">← вернуться в корзину</button>
@@ -214,20 +214,9 @@
 
     </main>
 
-    <!-- ФУТЕР -->
     <footer class="footer">
         <div class="footer-inner">
             <p class="footer-copy">&copy; 2026 lebigmag. все права защищены.</p>
-            
-            <!-- Мобильное нижнее меню (Таб-бар) -->
-            <nav class="mobile-footer-menu" id="mobileFooterMenu">
-                <button class="menu-item" data-target="about">о проекте</button>
-                <button class="menu-item" data-target="delivery">доставка</button>
-                <button class="menu-item" data-target="payment">оплата</button>
-                <button class="menu-item" data-target="search">поиск</button>
-                <button class="menu-item link-item" id="mobileCartHeaderLink" data-target="cartPage">корзина <span id="cartUniqueCountMobile">(0)</span></button>
-            </nav>
-
             <div class="footer-links">
                 <a href="https://t.me/lebigmag">Telegram</a>
                 <a href="http://www.instagram.com/lebigmag/">Instagram</a>
@@ -235,7 +224,6 @@
         </div>
     </footer>
 
-    <!-- МОБАЛ СЛАЙДЕР С ЛАЙТБОКСОМ -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-arrow prev" id="lightboxPrev" aria-label="Предыдущее фото">←</button>
         <div class="lightbox-content">
