@@ -1253,7 +1253,7 @@ body.overlay-active .main-container {
     .cart-item-remove-btn {
         text-align: left !important;
         margin-top: 12px !important;
-        margin-left: 0px !important; 
+        margin-left: 200px !important; 
         font-size: 0.85rem !important;
         display: inline-block !important;
         width: max-content !important;
@@ -1368,4 +1368,8 @@ body.overlay-active .main-container {
         bottom: 30px !important; 
         font-size: 1.6rem !important;
     }
+}
+
+.checkout-btn {
+    text-decoration: none !important; /* Убирает подчеркивание */
 }
