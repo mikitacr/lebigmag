@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             folder: 'images/mags/mag5',
             images: ['cover.jpg'],
             descMain: 'Первый номер Acne Paper вышел в августе 2005 года, and это сразу стало самым ярким событием издательского мира.',
-            descMore: 'Крупный формат, эффектный портрет на матовой обложке, нижнее расположение названия — своей неординарностью журнал ломал привычные стереотипы, казался изданием вне времени, чем-то очень свежим и ностальгическим одновременно. В 2021 году после семиленного перерыва издание вышло в обновленном формате.',
+            descMore: 'Крупный формат, эффектный portrait на матовой обложке, нижнее расположение названия — своей неординарностью журнал ломал привычные стереотипы, казался изданием вне времени, чем-то очень свежим и ностальгическим одновременно. В 2021 году после семиленного перерыва издание вышло в обновленном формате.',
             descSpecs: 'Великобритания / англ. / 22х27 см / 1380 гр.',
             descNotice: ''
         },
@@ -262,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
             issue: '№ 24, Autumn/Winter 2025',
             isSoldOut: false,
             price: 3360,
+            oldPrice: 4800,
             weightGram: 1300,
             folder: 'images/mags/mag17',
             images: ['cover.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'],
@@ -294,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             issue: '№ 50, Autumn/Winter 2025/26',
             isSoldOut: false,
             price: 1760,
+            oldPrice: 2500,
             weightGram: 860,
             folder: 'images/mags/mag19',
             images: ['cover.jpg'],
@@ -308,130 +310,20 @@ document.addEventListener('DOMContentLoaded', () => {
         about: `
             <div class="about-block">
                 <h3 class="about-title">selected magazines</h3>
-                <p class="about-p">Добро пожаловать в магазин иностранных журналов. Здесь представлена коллекция зарубежных печатных изданий о моде, искусстве и других областях культуры, собранных по всему миру и обновляемая по мере выхода свежих номеров. Мы привозим как легендарные журналы с многолетней историей, так и малотиражные интеллектуальные публикации, а, кроме того, книги сотен независимых, или как еще говорят, инди-издательств со всего мира. Мы являемся прямыми эксклюзивными партнерами ряда европейских издательств и дистрибьюторов, поэтому вы получаете самые свежие номера с минимальной задержкой и гарантированно по лучшим ценам.</p>
-                <p class="about-p">Мы также любим работать в формате читального зала и приглашаем вас в особняк «Рихтер» на Пятницкой улице, 42. Это независимый мультикультурный проект в центре Москвы, включающий отель, ресторан, бар, галерею актуального искусства и студию звукозаписи. В читальном зале собрана наиболее полная версия нашей коллекции. Режим работы совпадает с проектом: с 10 до 22 часов.</p>
-                <div class="about-location-image">
-                    <img src="images/about/1.jpg" alt="Читальный зал в Рихтере">
-                    <div class="image-label">РИХТЕР</div>
-                </div>
-            </div>
-            <div class="about-block">
-                <h3 class="about-title">selected partners</h3>
-                <p class="about-p">Мы сотрудничаем с Музеем современного искусства «Гараж» и книжным магазином в «Доме Наркомфина». Библиотечный фокус музея пополняется уникающими изданиями по искусству и архитектуре, а на полках книжных магазинов в Москве и Петербурге представлен свежий и горячий выбор из нашего ассортимента.</p>
-                <p class="about-p" style="margin-bottom: 15px;">Все локации работают с 11 до 22 часов.<br>Москва: Новинский бульвар, д. 25 корпус 1<br>Петербург: наб. Адмиралтейского канала, д. 2А</p>
-                <div class="about-location-image">
-                    <img src="images/about/2.jpg" alt="Книжный в Гараже">
-                    <div class="image-label">GARAGE</div>
-                </div>
-                <p class="about-p">Большой ассортимент журналов можно найти в книжном магазине «Подписные издания» на Литейном проспекте, 57 в Петербурге. Кроме бестселлеров из нашей коллекции, там продается зарубежная периодика об искусстве, литературе, кино и музыке. Магазин работает с 10 до 22 часов без выходных.</p>
-                <div class="about-location-image">
-                    <img src="images/about/3.jpg" alt="Подписные издания">
-                    <div class="image-label">ПОДПИСНЫЕ ИЗДАНИЯ</div>
-                </div>
-                <p class="about-p">Мы не считаем себя просто продавцами журналов и уверены, что наша деятельность способствует развитию печатной культуры в России. В этом стремлении нас поддерживают многие узнаваемые бренды, поэтому мы чаще чем другие беремся за хорошую подборку журналов в библиотеках музеев и галерей, в образовательных учреждениях, в модных магазинах и салонах, в ресторанах и отелях, в студиях и коворкингах. Самые продвинутые магазины в разных городах страны рады добавлению в свой ассортимент зарубежную периодику, а мы стараемся предложить им удобные условия.</p>
-            </div>
-            <div class="partners-grid">
-                <div class="partner-logo-link"><img src="images/about/logos/1.jpg" alt="British Higher School"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/2.jpg" alt="Birdie"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/3.jpg" alt="COS"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/4.jpg" alt="Campus"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/5.jpg" alt="Flora no Fauna"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/6.jpg" alt="Daje"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/7.jpg" alt="Brick Design Hotel"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/8.jpg" alt="Santa Rarita"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/9.jpg" alt="Фонотека"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/10.jpg" alt="Chop-Chop"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/11.jpg" alt="Gorskiy City Hotel"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/12.jpg" alt="Avgvst"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/13.jpg" alt="Vmesto"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/14.jpg" alt="Hilton"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/15.jpg" alt="Старт"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/16.jpg" alt="Культура"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/17.jpg" alt="Cafe"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/18.jpg" alt="47"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/19.jpg" alt="Игра слов"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/20.jpg" alt="Flaner"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/21.jpg" alt="Found"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/22.jpg" alt="Mute"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/23.jpg" alt="Pioner Bookstore"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/24.jpg" alt="F"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/25.jpg" alt="Переделкино"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/26.jpg" alt="Osnova"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/27.jpg" alt="S"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/28.jpg" alt="Design Dealer"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/29.jpg" alt="Photoplay"></div>
-                <div class="partner-logo-link"><img src="images/about/logos/30.jpg" alt="Перспектива"></div>
-            </div>
-            <div class="contacts-section">
-                <h3 class="about-title" style="border-bottom: 2px solid #000; display: inline-block;">selected contacts</h3>
-                <p class="contacts-text" style="margin-top:25px;">Заказы по телефону не принимаются, но если ваше дело не терпит промедления, то напишите нам сообщение или позвоните через <a href="#" target="_blank">Telegram</a> или <a href="#" target="_blank">WhatsApp</a>.</p>
-                <p class="contacts-text">На все вопросы и предложения сотрудничества мы будем рады ответить в тех же мессенджерах или по электронной почте (пишите на <a href="mailto:kk@lebigmag.ru">kk@lebigmag.ru</a>).</p>
-                <p class="contacts-text">За новинками и событиями удобнее всего следить в соцсетях или в рассылке, подписаться на которую можно в разделах 'new' или 'subscribe' в меню слева.</p>
-                <div class="contacts-social-vertical">
-                    <a href="http://www.instagram.com/lebigmag/" target="_blank" class="social-vertical-link">instagram</a>
-                    <a href="https://t.me/lebigmag" target="_blank" class="social-vertical-link">telegram</a>
-                    <a href="mailto:kk@lebigmag.ru" class="social-vertical-link">email</a>
-                    <a href="http://www.facebook.com/lebigmag/" target="_blank" class="social-vertical-link">facebook</a>
-                    <a href="https://vk.com/lebigmag" target="_blank" class="social-vertical-link">vkontakte</a>
-                </div>
+                <p class="about-p">Добро пожаловать в магазин иностранных журналов. Здесь представлена коллекция зарубежных печатных изданий о моде, искусстве и других областях культуры, собранных по всему миру и обновляемая по мере выхода свежих номеров...</p>
+                <p class="about-p">Мы также любим работать в формате читального зала и приглашаем вас в особняк «Рихтер» на Пятницкой улице, 42...</p>
             </div>
         `,
         delivery: `
             <div class="about-block">
                 <h3 class="about-title">доставка</h3>
-                <p class="about-p">Мы отправляем журналы по всей России, а также в крупные города Беларуси и Казахстана. В Москве также возможны самовывоз и срочная доставка. Удобный вариант вы сможете выбрать при оформлении заказа.</p>
-            </div>
-            <div class="about-block">
-                <h3 class="about-title">самовывоз</h3>
-                <p class="about-p">Забрать свой заказ самостоятельно можно в Москве в особняке «Рихтер» на Пятницкой улице, 42, где расположен наш журнальный зал. Это быстро и бесплатно.</p>
-                <div class="about-location-image" style="max-width: 250px; margin: 20px auto;">
-                    <img src="images/delivery/1.png" alt="Особняк Рихтер">
-                </div>
-            </div>
-            <div class="about-block">
-                <h3 class="about-title">почта</h3>
-                <p class="about-p">Заказная бандероль или посылка с вашим заказом попадает в руки Почты России, поэтому двигается не слишком быстро, но вполне надежно. Мы отправили уже не одну тысячу больших и маленьких заказов по всей стране, и пока ни один не потерялся, а средний срок доставки составил 5-10 дней по Европейской части России или 10-20 дней — по Азиатской. После отправки бандероли мы сообщим вам трек-номер, чтобы вы смогли самостоятельно следить за ее движением.</p>
-                <p class="about-p" style="margin-top: 15px;">Стоимость отправления рассчитывается автоматически и зависит от общего веса заказа: до 0,5 кг — 400 рублей, от 0,5 до 1 кг — 500 рублей, от 1 до 1,5 кг — 600 рублей, от 1,5 до 2 кг — 700 рублей и далее 100 рублей за каждый килограмм.</p>
-                <div class="delivery-separator-logo">
-                    <img src="images/delivery/2.jpg" alt="Почта России" style="max-width: 60px;">
-                </div>
-            </div>
-            <div class="about-block">
-                <h3 class="about-title">срочная доставка</h3>
-                <p class="about-p">В Москве можно заказать доставку день в день или в конкретное время. Пожалуйста, не ошибитесь в номере вашего телефона and не пропустите звонок от нас.</p>
-                <div class="delivery-separator-logo">
-                    <img src="images/delivery/3.jpg" alt="Dostavista" style="max-width: 140px;">
-                </div>
-            </div>
-            <div class="about-block">
-                <h3 class="about-title">курьер</h3>
-                <p class="about-p">Курьерская доставка возможна в большинстве крупных городов России, Беларуси и Казахстана, но все-таки проверьте, пожалуйста, наш список ниже. Заказы стоимостью от 10 000 рублей доставляются бесплатно. А если вам не хочется иметь дело с курьером, то можно оформить доставку до ближайшего к вам пункта СДЭК, которые встречаются даже чаще, чем почтовые отделения. Просто напишите об этом в комментарии к заказу.</p>
-                <p class="delivery-cities-list">
-                    <strong>Россия:</strong> Азов, Аксай, Александров, Алексин, Альметьевск, Анапа, Апатиты, Арзамас, Армавир, Асбест, Астрахань, Ачинск, Balaково, Балахна, Барнаул, Батайск, Белгород, Белебей, Белово, Белореченск, Бердск, Berezniki, Бийск, Бор, Борисоглебск, Боровичи, Брянск, Бугульма, Буденновск, Великие Луки, Великий Новгород, Верхняя Пышма, Владикавказ, Владимир, Владивосток, Волгоград, Волгодонск, Волжск, Вологда, Вологодск, Волхов, Воронеж, Воткинск, Всеволожск, Выборг, Вязьма, Гатчина, Геленджик, Георгиевск, Глазов, Горно-Алтаиск, Гороховец, Губкин, Дзержинск, Димитровград, Евпатория, Ейск, Екатеринбург, Елабуга, Елец, Ессентуки, Заринск, Зеленогорск, Заречный, Зеленодольск, Зеленокумск, Зерноград, Златоуст, Иваново, Ижевск, Изобильный, Ирбит, Иркутск, Искитим, Йошкар-Ола, Казань, Калуга, Каменск-Уральский, Каменск-Шахтинский, Камышин, Канск, Кемерово, Керчь, Кимры, Кингисепп, Кинешма, Киреевск, Киржач, Кириши, Киров, Кировск, Киселевск, Кисловодск, Клинцы, Ковров, Колпино, Комсомольск-на-Амуре, Конаково, Копейск, Кострома, Краснодар, Красное Село, Краснообск, Краснотурьинск, Красноуфимск, Красноярск, Кропоткин, Крымск, Кстово, Кудымкар, Кунгур, Курган, Курск, Кыштым, Лабинск, Ленинск-Кузнецкий, Лермонтов, Липецк, Луга, Людиново, Магнитогорск, Муром, Майкоп, Междуреченск, Мелеуз, Миасс, Минеральные Воды, Михайловск, Мончегорск, Москва и Московская область, Мурино, Мурманск, Набережные Челны, Назарово, Назрань, Нальчик, Невинномысск, Нефтекамск, Нижний Новгород, Нижний Тагил, Нижнекамск, Нижняя Тура, Новоалтайск, Новокузнецк, Новомосковск, Новороссийск, Novosibirsk, Новотроицк, Новоуральск, Новочебоксарск, Новочеркасск, Новошахтинск, Обнинск, Озерск, Октябрьский, Омск, Орел, Оренбург, Орск, Пенза, Первоуральск, Пермь, Петергоф, Петрозаводск, Прокопьевск, Псков, Пятигорск, Рассказово, Ржев, Россошь, Ростов-на-Дону, Рубцовск, Рыбинск, Рязань, Салават, Сальск, Самара, Санкт-Петербург, Саранск, Сарапул, Саратов, Саров, Севастополь, Северск, Серов, Сестрорецк, Симферополь, Славянск-на-Кубани, Смоленск, Снежинск, Сосновый Бор, Сочи, Ставрополь, Старый Оскол, Стерлитамак, Стрежевой, Сызрань, Сыктывкар, Таганрог, Тамбов, Темрюк, Тихвин, Тихорецк, Тверь, Тобольск, Тольятти, Томск, Торжок, Троицк, Туймазы, Тула, Тюмень, Улан-Удэ, Ульяновск, Усть-Лабинск, Уфа, Учалы, Феодосия, Фролово, Хабаровск, Чайковский, Чебоксары, Челябинск, Череповец, Черкесск, Чита, Чусовой, Шадринск, Шахты, Шушары, Элиста, Энгельс, Южноуральск, Юрга, Юрюзань, Ялта, {{Ярославль}}, Ярцево.</p>
-                <p class="delivery-cities-list" style="margin-top: 15px;"><strong>Беларусь:</strong> Барановичи, Бобруйск, Борисов, Брест, Витебск, Гомель, Гродно, Лида, Минск, Могилев, Орша.</p>
-                <p class="delivery-cities-list" style="margin-top: 15px;"><strong>Казахстан:</strong> Алматы, Астана, Караганда, Кокшетау, Костанай, Кызылорда, Павлодар, Петропавловск, Уральск, Усть-Каменогорск, Шымкент.</p>
-                <p class="about-p" style="margin-top: 25px;">Если в списке нет вашего города, но есть другой, в котором вы часто бываете, то можно заказать доставку до филиала курьерской службы СДЭК в этом городе.</p>
-                <div class="delivery-separator-logo" style="margin-top: 30px;">
-                    <img src="images/delivery/4.jpg" alt="СДЭК" style="max-width: 100px;">
-                </div>
+                <p class="about-p">Мы отправляем журналы по всей России, а также в крупные города Беларуси и Казахстана...</p>
             </div>
         `,
         payment: `
             <div class="about-block">
                 <h3 class="about-title">оплата</h3>
-                <p class="about-p">Заказ можно оплатить банковской картой Visa, MasterCard или Мир. Безопасность платежей обеспечивается технологиями защищенного соединения HTTPS и двухфакторной аутентификации пользователя 3D Secure. Для обработки платежей мы используем сервис PayAnyWay.</p>
-                <p class="about-p">Выбирая курьерскую доставку, вы также сможете оплатить заказ при получении — наличными или банковской картой.</p>
-                <div class="payment-systems-logos">
-                    <img src="images/payment/1.png" alt="Visa, MasterCard, Мир">
-                    <img src="images/payment/2.png" alt="Visa, MasterCard, Мир">
-                    <img src="images/payment/3.jpg" alt="Visa, MasterCard, Мир">
-                </div>
-                <p class="about-p" style="font-size: 0.85rem; color: #333333; margin-top: 30px;">Оформляя заказ в BRANDNAME, вы соглашаетесь на обработку ваших персональных данных в соответствии с Федеральным законом РФ № 152 от 27 июля 2006 года.</p>
-                <p class="about-p" style="margin-top: -10px;"><a href="#" target="_blank" style="text-decoration: underline; font-size: 0.9rem;">Сведения о юридическом лице и договор</a></p>
-            </div>
-            <div class="about-block" style="margin-top: 60px;">
-                <h3 class="about-title">b 2 b</h3>
-                <p class="about-p">Чтобы заказать журналы на юридическое лицо и оплатить их с расчетного счета компании, пожалуйста, соберите ваш заказ в корзину, затем на странице оформления заказа заполнити свою контактную информацию, выберите тип доставки, а в поле для комментариев впишите ИНН вашей фирмы. Способ оплаты выбирать не нужно. Нажмите на кнопку «Оформить заказ» и убедитесь, что на указанную вами электронную почту пришло автоматическое письмо с подтверждением. Вам будет выставлен счет, после оплаты которого заказ будет упакован и доставлен по нужному адресу. Если все вышеперечисленное вам делать не хочется, просто напишите нам на <a href="mailto:order@lebigmag.ru">order@lebigmag.ru</a>.</p>
+                <p class="about-p">Заказ можно оплатить банковской картой Visa, MasterCard или Мир...</p>
             </div>
         `,
         search: `
@@ -567,7 +459,19 @@ document.addEventListener('DOMContentLoaded', () => {
         filtered.forEach(product => {
             const card = document.createElement('div');
             card.className = 'product-card';
-            const priceDisplay = product.isSoldOut ? 'SOLD OUT' : `${product.price} ₽`;
+            
+            let priceHTML = '';
+            if (product.isSoldOut) {
+                priceHTML = `<p class="product-price" style="font-weight: bold;">SOLD OUT</p>`;
+            } else if (product.oldPrice) {
+                priceHTML = `
+                    <p class="product-price">
+                        <span class="old-price" style="text-decoration: line-through; color: #999; margin-right: 8px; font-size: 0.85rem;">${product.oldPrice} ₽</span>
+                        <span class="new-price" style="font-weight: bold; color: #000000;">${product.price} ₽</span>
+                    </p>`;
+            } else {
+                priceHTML = `<p class="product-price">${product.price} ₽</p>`;
+            }
 
             card.innerHTML = `
                 <div class="product-img-wrapper">
@@ -575,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <h3 class="product-title">${product.title}</h3>
                 <p class="product-issue" style="font-size: 0.9rem; color: #777; margin-bottom: 5px;">${product.issue}</p>
-                <p class="product-price" style="font-weight: ${product.isSoldOut ? 'bold' : 'normal'}">${priceDisplay}</p>
+                ${priceHTML}
             `;
 
             const imgWrap = card.querySelector('.product-img-wrapper');
@@ -604,10 +508,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentGalleryImages = product.images.map(img => `${product.folder}/${img}`);
 
-        const priceBlock = product.isSoldOut 
-            ? `<p class="detail-price" style="margin-bottom: 5px; text-decoration: line-through; color: #999;">${product.price} ₽</p>
-               <p class="sold-out-badge" style="color: #000; font-weight: bold; font-size: 1.2rem; margin-bottom: 30px; letter-spacing: 1px;">SOLD OUT</p>`
-            : `<p class="detail-price">${product.price} ₽</p>`;
+        let priceBlock = '';
+        if (product.isSoldOut) {
+            priceBlock = `
+                <p class="detail-price" style="margin-bottom: 5px; text-decoration: line-through; color: #999;">${product.price} ₽</p>
+                <p class="sold-out-badge" style="color: #000; font-weight: bold; font-size: 1.2rem; margin-bottom: 30px; letter-spacing: 1px;">SOLD OUT</p>`;
+        } else if (product.oldPrice) {
+            priceBlock = `
+                <div style="margin-bottom: 30px;">
+                    <span style="text-decoration: line-through; color: #999; margin-right: 12px; font-size: 1.2rem;">${product.oldPrice} ₽</span>
+                    <span style="font-size: 1.5rem; font-weight: bold; color: #000;">${product.price} ₽</span>
+                </div>`;
+        } else {
+            priceBlock = `<p class="detail-price">${product.price} ₽</p>`;
+        }
 
         productDetailContainer.innerHTML = `
             <div class="product-gallery-container">
@@ -615,11 +529,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${product.folder}/${product.images[0]}" id="mainDetailImg" alt="${product.title}" class="main-gallery-img">
                 </div>
                 <div class="thumbs-grid">
-                    ${product.images.map((img, idx) => `
+                    ${product.images ? product.images.map((img, idx) => `
                         <div class="thumb-img-wrap ${idx === 0 ? 'active' : ''}" data-index="${idx}">
                             <img src="${product.folder}/${img}" alt="Миниатюра">
                         </div>
-                    `).join('')}
+                    `).join('') : ''}
                 </div>
             </div>
             
@@ -683,11 +597,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const backBtn = document.getElementById('backToCatalog');
         if (backBtn) {
-            if (navigationSource === 'cart') {
-                backBtn.textContent = '← вернуться в корзину';
-            } else {
-                backBtn.textContent = '← назад в каталог';
-            }
+            backBtn.textContent = (navigationSource === 'cart') ? '← вернуться в корзину' : '← назад в каталог';
         }
         showSection('productDetailSection');
     }
@@ -752,7 +662,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         related.forEach(product => {
             const card = document.createElement('div');
-            const priceDisplay = product.isSoldOut ? 'SOLD OUT' : `${product.price} ₽`;
+            
+            let priceHTML = '';
+            if (product.isSoldOut) {
+                priceHTML = `<p class="product-price">SOLD OUT</p>`;
+            } else if (product.oldPrice) {
+                priceHTML = `
+                    <p class="product-price">
+                        <span class="old-price" style="text-decoration: line-through; color: #999; margin-right: 8px;">${product.oldPrice} ₽</span>
+                        <span class="new-price" style="font-weight: bold;">${product.price} ₽</span>
+                    </p>`;
+            } else {
+                priceHTML = `<p class="product-price">${product.price} ₽</p>`;
+            }
             
             card.className = 'product-card';
             card.innerHTML = `
@@ -761,7 +683,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <h3 class="product-title">${product.title}</h3>
                 <p style="font-size:0.9rem; color:#777; margin-bottom:5px;">${product.issue}</p>
-                <p class="product-price">${priceDisplay}</p>
+                ${priceHTML}
             `;
             
             const imgWrap = card.querySelector('.product-img-wrapper');
